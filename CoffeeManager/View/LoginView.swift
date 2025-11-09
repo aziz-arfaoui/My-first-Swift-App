@@ -7,18 +7,27 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct LoginView: View {
+    
+    @State private var age: Int = 15
+
     var body: some View {
         VStack {
             Image(systemName: "globe")
                 .imageScale(.large)
                 .foregroundStyle(.tint)
-            Text("Hello, world!")
+
+            Text(category(for: age))
         }
         .padding()
     }
 }
 
+func category(for age: Int) -> String {
+    age < 18 ? "minor" : "adult"
+}
+
+
 #Preview {
-    ContentView()
+    LoginView()
 }
