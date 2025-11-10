@@ -1,8 +1,14 @@
-# Xcode
+# Xcode build files
 build/
 DerivedData/
+
+# Xcode workspace & user-specific files
 *.xcworkspace
 *.xcuserstate
 *.xcuserdata/
+
+# Swap files
 *.swp
-*.DS_Store
+
+# macOS system files
+.DS_Store
